@@ -52,7 +52,98 @@
         </nav>
       </header>
 
-      <main class="main_inner"></main>
+      <main class="main_inner">
+        <header class="inner_header">
+          <ul class="breadcrumbs_list">
+            <li class="breadcrumbs_item">
+              <a class="breadcrumbs_link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs_item">
+              <a class="breadcrumbs_link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="breadcrumbs_item">
+              <a class="breadcrumbs_link current_breadcrumbs_link" href="ice_cream.html">Сливочное мороженое</a>
+            </li>
+          </ul>
+          <h1 class="inner_title title">Сливочное мороженое</h1>
+          <form class="catalog_filter" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="catalog_filter_group">
+              <legend class="catalog_filter_title">Сортировка:</legend>
+              <select name="sorting">
+                <option value="popular">по популярности</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="catalog_filter_group">
+              <legend class="catalog_filter_title">Цена: 100 ₽ – 500 ₽</legend>
+              <!-- ????? -->
+            </fieldset>
+
+            <fieldset class="catalog_filter_group">
+              <legend class="catalog_filter_title">Жирность:</legend>
+              <ul class="catalog_filter_list">
+                <li class="catalog_filter_item">
+                  <label class="control">
+                    <input class="control_input" type="radio" name="fat" value="0%">
+                  </label>
+                </li>
+                <li class="catalog_filter_item">
+                  <label class="control">
+                    <input class="control_input" type="radio" name="fat" value="10%" checked>
+                  </label>
+                </li>
+                <li class="catalog_filter_item">
+                  <label class="control">
+                    <input class="control_input" type="radio" name="fat" value="below_30%">
+                  </label>
+                </li>
+                <li class="catalog_filter_item">
+                  <label class="control">
+                    <input class="control_input" type="radio" name="fat" value="upper_30%">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="catalog_filter_group">
+              <legend class="catalog_filter_title">Наполнители:</legend>
+              <ul class="catalog_filter_list">
+                <li class="catalog_filter_item">
+                  <label class="control">
+                    <input class="control_input" type="checkbox" name="chocolate" checked>
+                    шоколадные
+                  </label>
+                </li>
+                <li class="catalog_filter_item">
+                  <label class="control">
+                    <input class="control_input" type="checkbox" name="sugar_sprinkles" checked>
+                    сахарные посыпки
+                  </label>
+                </li>
+                <li class="catalog_filter_item">
+                  <label class="control">
+                    <input class="control_input" type="checkbox" name="fruits">
+                    фрукты
+                  </label>
+                </li>
+                <li class="catalog_filter_item">
+                  <label class="control">
+                    <input class="control_input" type="checkbox" name="syntheses">
+                    сиропы
+                  </label>
+                </li>
+                <li class="catalog_filter_item">
+                  <label class="control">
+                    <input class="control_input" type="checkbox" name="jams">
+                    джемы
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit">Применить</button>
+          </form>
+        </header>
+      </main>
 
       <footer class="main_footer">
         <section class="footer_socials">
