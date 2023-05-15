@@ -22,3 +22,85 @@ body {
   max-width: 1170px;
   margin: 0 auto;
 }
+
+/* additionally_offer */
+
+.offer_item {
+  background: #FF7799 no-repeat scroll right;
+}
+
+.offer_item:nth-child(1) {
+  background-image: url("../images/index/raspberry_waffle.png");
+}
+
+.offer_item:nth-child(2) {
+  background-image: url("../images/index/marshmallow_waffle.png");
+}
+
+/* popular_flavors */
+
+.popular_flavors_item {
+  background-color: #FCFCFC;
+}
+
+.popular_flavors_button {
+  background-color: #FF2F64;
+}
+
+/* advantages */
+
+.advantages {
+  border: 24px solid yellow;
+  border-radius: 16px;
+  border-image: url("/images/backgrounds/border_waffle.png") 10 round;
+  background-color: #FFFFFF;
+}
+
+.advantages_text::before {
+  /* ??????? */
+  content: "";
+  background-image: url("../images/icons/ice_cream.svg");
+}
+
+/* blog */
+
+.blog {
+  background: #FFFFFF url("/images/backgrounds/blog_background.jpg") no-repeat;
+}
+
+/* subscribe */
+
+.subscribe {
+  background-color: #FFFFFF;
+  border: 6px solid #FFFFFF;
+  border-radius: 16px;
+  border-image: url("/images/backgrounds/border_post.png") 10 round;
+}
+
+/* delivery */
+
+.delivery {
+  background: #FFFFFF url("/images/backgrounds/delivery_background.jpg") no-repeat right;
+}
+
+/* address */
+
+.address {
+  background: #e3e1e1 url("/images/backgrounds/address_background.jpg") no-repeat right;
+}
+
+.address_desc {
+  background-color: #FCFCFC;
+}
+
+.address_button {
+  background-color: #FF2F64;
+  color: #FCFCFC;
+}
+
+/* footer */
+
+.footer_block_group::before {
+  content: "";
+  background-image: url("/images/icons/black_heart.svg");
+}
