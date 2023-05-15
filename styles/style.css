@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
 /* .visually_hidden {
     position: absolute;
     width: 1px;
@@ -13,6 +37,10 @@
   } */
 
 body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   background-color: #FEAFC3;
   margin: 0;
   width: 100%;
@@ -21,6 +49,63 @@ body {
 .main_container {
   max-width: 1170px;
   margin: 0 auto;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+}
+
+/* header */
+
+.navigation_address {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.navigation_user_button {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  background-color: #FCFCFC4D;
+  border: none;
+  border-radius: 30px;
+}
+
+/* main */
+
+/* slider */
+
+.slider_list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slider_title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+  color: #2D3440;
+}
+
+.slider_desc {
+  font-size: 18px;
+  line-height: 24px;
+  color: #2D3440;
+}
+
+.slider_link {
+  text-decoration: none;
+  font-weight: 700;
+  background-color: #FCFCFC;
+  color: #2D3440;
+  border: 4px solid red;
+  border-radius: 46px;
 }
 
 /* additionally_offer */
@@ -103,4 +188,17 @@ body {
 .footer_block_group::before {
   content: "";
   background-image: url("/images/icons/black_heart.svg");
+}
+
+
+/* ice_cream.html */
+
+/* catalog_products */
+
+.product_card {
+  background-color: #FCFCFC;
+}
+
+.product_card_button {
+  background-color: #FF2F64;
 }
