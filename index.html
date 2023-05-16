@@ -109,7 +109,8 @@
             </li>
             <li class="slider_item">
               <h3 class="slider_title">Сливочное мороженое со вкусом банана</h3>
-              <p class="slider_desc">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий
+              <p class="slider_desc">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение
+                даже в самый жаркий
                 летний день.</p>
               <a class="slider_link" href="catalog.html">Заказать</a>
               <img class="slider_main_image" src="images/index/slider_ice_cream_banana.png" width="350px" height="507px"
@@ -340,28 +341,29 @@
             <p class="delivery_form_text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
             </p>
             <p class="field_group form_date">
-              <label class="form_label" for="date"></label>
+              <label class="form_label form_label_info" for="date">Дата</label>
               <input class="field" type="text" id="date" name="date" placeholder="01.04.2020">
             </p>
             <p class="field_group form_phone">
-              <label class="form_label" for="phone"></label>
+              <label class="form_label" for="phone">Телефон</label>
               <input class="field" type="text" id="phone" name="phone" placeholder="+7 800 999-00-00">
             </p>
             <p class="field_group form_address">
-              <label class="form_label" for="address">Адрес</label>
+              <label class="form_label form_label_info" for="address">Адрес</label>
               <input class="field" type="text" id="address" name="address" placeholder="ул. Большая Конюшенная, 19/8">
             </p>
-            <button type="submit">Отправить</button>
+            <button class="delivery_form_button" type="submit">Отправить</button>
           </form>
         </section>
         <section class="address">
           <h2 class="visually_hidden">Адрес</h2>
           <address class="address_desc">
-            Адрес главного офиса<br>
-            и офлайн-магазина:<br>
+            <p class="address_text">Адрес главного офиса<br>
+              и офлайн-магазина:<br>
+            </p>
             <b>наб. реки Карповки, 5 лит П, Санкт-Петербург</b><br>
             Для заказов по телефону:<br>
-            <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <a class="address_tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
             (с 10 до 20 ежедневно)<br>
             <button class="address_button" type="button">Форма обратной связи</button>
           </address>
@@ -405,7 +407,7 @@
         <section class="footer_block_group">
           <h2 class="visually_hidden">Дополнительное меню</h2>
           <ul class="block_group_list">
-            <li class="block_group_item">
+            <li class="block_group_item block_group_item_strong">
               <a href="#" class="block_group_link">Для поставщиков</a>
             </li>
             <li class="block_group_item">
@@ -422,9 +424,11 @@
         <section class="footer_contacts">
           <h2 class="visually_hidden">Контакты</h2>
           <a class="footer_contacts_link" href="https://htmlacademy.ru/" target="_blank">
-            <img class="contacts_logo" src="images/icons/logo_htmlacademy.svg" width="93px" height="27px" alt="Логотип HTML Academy.">
+            <img class="contacts_logo" src="images/icons/logo_htmlacademy.svg" width="93px" height="27px"
+              alt="Логотип HTML Academy.">
           </a>
-          <p class="contacts_text">Сделано в <a href="https://htmlacademy.ru/" target="_blank">.html academy</a> © 2021</p>
+          <p class="contacts_text">Сделано в <a class="contacts_text_link" href="https://htmlacademy.ru/" target="_blank">.html academy</a> © 2021
+          </p>
         </section>
       </footer>
     </div>
