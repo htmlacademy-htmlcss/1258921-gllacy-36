@@ -107,9 +107,11 @@
           <form class="catalog_filter" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="catalog_filter_group">
               <legend class="catalog_filter_title">Сортировка:</legend>
-              <select name="sorting">
-                <option value="popular">по популярности</option>
-              </select>
+              <div class="form_back">
+                <select name="sorting">
+                  <option value="popular">по популярности</option>
+                </select>
+              </div>
             </fieldset>
 
             <fieldset class="catalog_filter_group">
@@ -119,25 +121,29 @@
 
             <fieldset class="catalog_filter_group">
               <legend class="catalog_filter_title">Жирность:</legend>
-              <ul class="catalog_filter_list">
+              <ul class="catalog_filter_list form_back">
                 <li class="catalog_filter_item">
                   <label class="control">
                     <input class="control_input" type="radio" name="fat" value="0%">
+                    0%
                   </label>
                 </li>
                 <li class="catalog_filter_item">
                   <label class="control">
                     <input class="control_input" type="radio" name="fat" value="10%" checked>
+                    до 10%
                   </label>
                 </li>
                 <li class="catalog_filter_item">
                   <label class="control">
                     <input class="control_input" type="radio" name="fat" value="below_30%">
+                    до 30%
                   </label>
                 </li>
                 <li class="catalog_filter_item">
                   <label class="control">
                     <input class="control_input" type="radio" name="fat" value="upper_30%">
+                    выше 30%
                   </label>
                 </li>
               </ul>
@@ -145,7 +151,7 @@
 
             <fieldset class="catalog_filter_group">
               <legend class="catalog_filter_title">Наполнители:</legend>
-              <ul class="catalog_filter_list">
+              <ul class="catalog_filter_list form_back">
                 <li class="catalog_filter_item">
                   <label class="control">
                     <input class="control_input" type="checkbox" name="chocolate" checked>
@@ -178,7 +184,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button type="submit">Применить</button>
+            <button class="catalog_filter_button" type="submit">Применить</button>
           </form>
         </header>
         <section class="catalog_products">
@@ -186,7 +192,8 @@
           <ul class="products_list">
             <li class="product_card">
               <h3 class="product_card_title">Малинка</h3>
-              <img class="product_card_image" src="images/ice_cream_catalog/raspberry.png" width="168px" height="168px" alt="Малинка.">
+              <img class="product_card_image" src="images/ice_cream_catalog/raspberry.png" width="168px" height="168px"
+                alt="Малинка.">
               <p class="product_card_desc">Сливочное мороженое с малиновым джемом</p>
               <span class="product_card_price">310 ₽/кг</span>
               <button class="product_card_button" type="button">
@@ -200,7 +207,8 @@
             </li>
             <li class="product_card">
               <h3 class="product_card_title">Фисташка</h3>
-              <img class="product_card_image" src="images/ice_cream_catalog/pistachio.png" width="168px" height="168px" alt="Фисташка.">
+              <img class="product_card_image" src="images/ice_cream_catalog/pistachio.png" width="168px" height="168px"
+                alt="Фисташка.">
               <p class="product_card_desc">Фисташковый пломбир с кусочками шоколада</p>
               <span class="product_card_price">340 ₽/кг</span>
               <button class="product_card_button" type="button">
@@ -214,7 +222,8 @@
             </li>
             <li class="product_card">
               <h3 class="product_card_title">Черника</h3>
-              <img class="product_card_image" src="images/ice_cream_catalog/blueberry.png" width="168px" height="168px" alt="Черника.">
+              <img class="product_card_image" src="images/ice_cream_catalog/blueberry.png" width="168px" height="168px"
+                alt="Черника.">
               <p class="product_card_desc">Крем-брюле с черничным джемом</p>
               <span class="product_card_price">330 ₽/кг</span>
               <button class="product_card_button" type="button">
@@ -228,7 +237,8 @@
             </li>
             <li class="product_card">
               <h3 class="product_card_title">Бабл-гам</h3>
-              <img class="product_card_image" src="images/ice_cream_catalog/bubble_gum.png" width="168px" height="168px" alt="Бабл-гам.">
+              <img class="product_card_image" src="images/ice_cream_catalog/bubble_gum.png" width="168px" height="168px"
+                alt="Бабл-гам.">
               <p class="product_card_desc">Ванильный пломбир со сладкой посыпкой</p>
               <span class="product_card_price">320 ₽/кг</span>
               <button class="product_card_button" type="button">
@@ -242,7 +252,8 @@
             </li>
             <li class="product_card">
               <h3 class="product_card_title">Ежевика</h3>
-              <img class="product_card_image" src="images/ice_cream_catalog/blackberry.png" width="168px" height="168px" alt="Ежевика.">
+              <img class="product_card_image" src="images/ice_cream_catalog/blackberry.png" width="168px" height="168px"
+                alt="Ежевика.">
               <p class="product_card_desc">Сливочное мороженое с ежевичным джемом</p>
               <span class="product_card_price">330 ₽/кг</span>
               <button class="product_card_button" type="button">
@@ -256,7 +267,8 @@
             </li>
             <li class="product_card">
               <h3 class="product_card_title">Банан</h3>
-              <img class="product_card_image" src="images/ice_cream_catalog/banana.png" width="168px" height="168px" alt="Банан.">
+              <img class="product_card_image" src="images/ice_cream_catalog/banana.png" width="168px" height="168px"
+                alt="Банан.">
               <p class="product_card_desc">Сливочный пломбир с банановым вкусом</p>
               <span class="product_card_price">340 ₽/кг</span>
               <button class="product_card_button" type="button">
@@ -270,7 +282,8 @@
             </li>
             <li class="product_card">
               <h3 class="product_card_title">Шоколадка</h3>
-              <img class="product_card_image" src="images/ice_cream_catalog/chocolate.png" width="168px" height="168px" alt="Шоколадка.">
+              <img class="product_card_image" src="images/ice_cream_catalog/chocolate.png" width="168px" height="168px"
+                alt="Шоколадка.">
               <p class="product_card_desc">Классический шоколадный пломбир</p>
               <span class="product_card_price">270 ₽/кг</span>
               <button class="product_card_button" type="button">
@@ -284,7 +297,8 @@
             </li>
             <li class="product_card">
               <h3 class="product_card_title">Клубничка</h3>
-              <img class="product_card_image" src="images/ice_cream_catalog/strawberry.png" width="168px" height="168px" alt="Клубничка.">
+              <img class="product_card_image" src="images/ice_cream_catalog/strawberry.png" width="168px" height="168px"
+                alt="Клубничка.">
               <p class="product_card_desc">Сливочный пломбир с клубничным вкусом</p>
               <span class="product_card_price">300 ₽/кг</span>
               <button class="product_card_button" type="button">
@@ -298,7 +312,8 @@
             </li>
             <li class="product_card">
               <h3 class="product_card_title">Лимон</h3>
-              <img class="product_card_image" src="images/ice_cream_catalog/lemon.png" width="168px" height="168px" alt="Лимон.">
+              <img class="product_card_image" src="images/ice_cream_catalog/lemon.png" width="168px" height="168px"
+                alt="Лимон.">
               <p class="product_card_desc">Освежающий лимонный сорбет</p>
               <span class="product_card_price">310 ₽/кг</span>
               <button class="product_card_button" type="button">
@@ -312,7 +327,8 @@
             </li>
             <li class="product_card">
               <h3 class="product_card_title">Ментол</h3>
-              <img class="product_card_image" src="images/ice_cream_catalog/menthol.png" width="168px" height="168px" alt="Ментол.">
+              <img class="product_card_image" src="images/ice_cream_catalog/menthol.png" width="168px" height="168px"
+                alt="Ментол.">
               <p class="product_card_desc">Сливочный пломбир с ментоловым сиропом</p>
               <span class="product_card_price">320 ₽/кг</span>
               <button class="product_card_button" type="button">
@@ -326,7 +342,8 @@
             </li>
             <li class="product_card">
               <h3 class="product_card_title">Орешек</h3>
-              <img class="product_card_image" src="images/ice_cream_catalog/nut.png" width="168px" height="168px" alt="Орешек.">
+              <img class="product_card_image" src="images/ice_cream_catalog/nut.png" width="168px" height="168px"
+                alt="Орешек.">
               <p class="product_card_desc">Фисташковый пломбир с шоколадным сиропом</p>
               <span class="product_card_price">360 ₽/кг</span>
               <button class="product_card_button" type="button">
@@ -340,7 +357,8 @@
             </li>
             <li class="product_card">
               <h3 class="product_card_title">Крем-брюле</h3>
-              <img class="product_card_image" src="images/ice_cream_catalog/creme_brulee.png" width="168px" height="168px" alt="Крем-брюле.">
+              <img class="product_card_image" src="images/ice_cream_catalog/creme_brulee.png" width="168px"
+                height="168px" alt="Крем-брюле.">
               <p class="product_card_desc">Классическое крем-брюле </p>
               <span class="product_card_price">280 ₽/кг</span>
               <button class="product_card_button" type="button">
@@ -437,9 +455,11 @@
         <section class="footer_contacts">
           <h2 class="visually_hidden">Контакты</h2>
           <a class="footer_contacts_link" href="https://htmlacademy.ru/" target="_blank">
-            <img class="contacts_logo" src="images/icons/logo_htmlacademy.svg" width="93px" height="27px" alt="Логотип HTML Academy.">
+            <img class="contacts_logo" src="images/icons/logo_htmlacademy.svg" width="93px" height="27px"
+              alt="Логотип HTML Academy.">
           </a>
-          <p class="contacts_text">Сделано в <a href="https://htmlacademy.ru/" target="_blank">.html academy</a> © 2021</p>
+          <p class="contacts_text">Сделано в <a href="https://htmlacademy.ru/" target="_blank">.html academy</a> © 2021
+          </p>
         </section>
       </footer>
     </div>

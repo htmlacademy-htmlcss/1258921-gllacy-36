@@ -349,7 +349,62 @@ body {
 
 /* ice_cream.html */
 
+/* inner_header */
+
+.breadcrumbs_list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.breadcrumbs_link {
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.catalog_filter_title {
+  font-size: 14px;
+  color: #2D3440;
+}
+
+.catalog_filter_list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.control {
+  font-size: 14px;
+  color: #2D3440;
+}
+
+.catalog_filter_button {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px 52px;
+  background-color: #FCFCFC4D;
+  color: #2D3440;
+  border: 4px solid #FCFCFC;
+  /* Pochemu ne krasitsya border? */
+  border-radius: 26px;
+}
+
+.form_back {
+  background-color: #FCFCFC4D;
+  padding: 8px 16px;
+}
+
 /* catalog_products */
+
+.products_list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 
 .product_card {
   background-color: #FCFCFC;
