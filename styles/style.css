@@ -2,7 +2,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/inter-400.woff2") format("woff2");
+  src: url("../fonts/inter-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/inter-700.woff2") format("woff2");
+  src: url(../fonts/inter-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  src: url("/fonts/inter-900.woff2") format("woff2");
+  src: url("../fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -163,6 +163,10 @@ body {
 
 /* additionally_offer */
 
+.additionally_offer {
+  color: #2D3440;
+}
+
 .offer_list {
   margin: 0;
   padding: 0;
@@ -173,12 +177,24 @@ body {
   background: #FF7799 no-repeat scroll right;
 }
 
-.offer_item:nth-child(1) {
-  background-image: url("../images/index/raspberry_waffle.png");
+.offer_container_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
 }
 
-.offer_item:nth-child(2) {
-  background-image: url("../images/index/marshmallow_waffle.png");
+.offer_container_text {
+  line-height: 22px;
+}
+
+.offer_container_link {
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #FCFCFC;
+  color: #2D3440;
+  border: 4px solid #FCFCFC66;
+  border-radius: 26px;
+  padding: 12px 32px;
 }
 
 /* popular_flavors */
@@ -195,14 +211,21 @@ body {
 
 .popular_flavors_button {
   background-color: #FF2F64;
+  color: #FCFCFC;
+  border-radius: 26px;
+  padding: 8px 11px;
 }
 
 /* advantages */
 
+.advantages_border_container {
+  width: 100%;
+  background: url(../images/backgrounds/border_waffle.png) no-repeat;
+}
+
 .advantages {
-  border: 24px solid yellow;
+  width: 1122px;
   border-radius: 16px;
-  border-image: url("/images/backgrounds/border_waffle.png") 10 round;
   background-color: #FFFFFF;
 }
 
@@ -221,27 +244,31 @@ body {
 /* blog */
 
 .blog {
-  background: #FFFFFF url("/images/backgrounds/blog_background.jpg") no-repeat;
+  background: #FFFFFF url("../images/backgrounds/blog_background.jpg") no-repeat;
 }
 
 /* subscribe */
+
+.subscribe_border_container {
+  background: url("../images/backgrounds/border_post.png") no-repeat center;
+  /* Ne rabotaet */
+}
 
 .subscribe {
   background-color: #FFFFFF;
   border: 6px solid #FFFFFF;
   border-radius: 16px;
-  border-image: url("/images/backgrounds/border_post.png") 10 round;
 }
 
 /* delivery */
 
 .delivery {
-  background: #FFFFFF url("/images/backgrounds/delivery_background.jpg") no-repeat right;
+  background: #FFFFFF url("../images/backgrounds/delivery_background.jpg") no-repeat right;
 }
 
 .form_label_info::after {
   content: "";
-  background-image: url("/images/icons/info.svg");
+  background-image: url("../images/icons/info.svg");
   /* Pochemu ne rabotaet? */
 }
 
@@ -266,20 +293,24 @@ body {
   border-radius: 26px;
 }
 
-/* address */
+/* about */
 
-.address {
-  background: #e3e1e1 url("/images/backgrounds/address_background.jpg") no-repeat right;
+.about {
+  background: #e3e1e1 url("../images/backgrounds/address_background.jpg") no-repeat right;
+}
+
+.about_address {
+  background-color: #FCFCFC;
+  color: #565C66;
+  font-style: normal;
 }
 
 .address_desc {
-  font-style: normal;
-  background-color: #FCFCFC;
-  color: #565C66;
+  color: #2D3440;
 }
 
 .address_tel {
-  font-family: 700;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-decoration: none;
@@ -317,7 +348,7 @@ body {
 
 .footer_block_group::before {
   content: "";
-  background-image: url("/images/icons/black_heart.svg");
+  background-image: url("../images/icons/black_heart.svg");
 }
 
 .block_group_item_strong {
@@ -465,5 +496,5 @@ body {
 
 .pagination_button_previous,
 .pagination_button_next {
-  background: #FCFCFC url("/images/icons/arrow.svg") no-repeat center;
+  background: #FCFCFC url("../images/icons/arrow.svg") no-repeat center;
 }
