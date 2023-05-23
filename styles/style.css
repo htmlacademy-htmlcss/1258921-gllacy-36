@@ -58,6 +58,7 @@ body {
   font-size: 32px;
   line-height: 46px;
   color: #2D3440;
+  text-align: center;
 }
 
 /* header */
@@ -196,12 +197,19 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  gap: 8px;
 }
 
 .slider_social_list {
   margin: 0;
   padding: 0;
+  margin-left: auto;
   list-style-type: none;
+  width: 104px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 /* additionally_offer */
@@ -348,6 +356,8 @@ body {
 }
 
 .popular_flavors_button {
+  width: 32px;
+  height: 32px;
   grid-column: 2/3;
   grid-row: 4/5;
   justify-self: flex-end;
@@ -356,7 +366,8 @@ body {
   color: #FCFCFC;
   border: none;
   border-radius: 26px;
-  padding: 8px 11px;
+  padding: 8px 8px;
+  cursor: pointer;
 }
 
 /* advantages */
@@ -409,17 +420,22 @@ body {
 /* subscribe */
 
 .subscribe_border_container {
-  width: 558px;
-  height: 212px;
+  width: 570px;
+  height: 224px;
   background: url("../images/backgrounds/border_post.png") no-repeat center;
   /* Ne rabotaet */
+  padding: 6px;
 }
 
 .subscribe {
-  width: 570px;
+  width: 558px;
+  height: 212px;
   background-color: #FFFFFF;
-  border: 6px solid #FFFFFF;
   border-radius: 16px;
+}
+
+.subscribe_text {
+  margin: 0;
 }
 
 /* delivery */
@@ -560,12 +576,21 @@ body {
 
 /* ice_cream.html */
 
+.main_inner {
+  margin-top: 30px;
+}
+
 /* inner_header */
+
+.inner_header {
+  margin-bottom: 95px;
+}
 
 .breadcrumbs_list {
   display: flex;
   padding: 0;
   margin: 0;
+  margin-bottom: 16px;
   list-style-type: none;
 
 }
@@ -579,6 +604,11 @@ body {
 
 .breadcrumbs_item:not(:last-child) {
   margin-right: 28px;
+}
+
+.inner_title {
+  text-align: start;
+  margin-bottom: 40px;
 }
 
 .catalog_filter {
@@ -625,6 +655,10 @@ body {
 }
 
 /* catalog_products */
+
+.catalog_products {
+  margin-bottom: 81px;
+}
 
 .products_list {
   display: grid;
@@ -689,6 +723,8 @@ body {
 }
 
 .product_card_button {
+  width: 32px;
+  height: 32px;
   grid-column: 2/3;
   grid-row: 4/5;
   justify-self: flex-end;
@@ -697,7 +733,19 @@ body {
   color: #FCFCFC;
   border: none;
   border-radius: 26px;
-  padding: 8px 11px;
+  padding: 8px 8px;
+  cursor: pointer;
+}
+
+.product_card_button path {
+  fill: #FCFCFC;
+}
+
+.catalog_button_pagination_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 81px;
 }
 
 .catalog_products_button {
@@ -717,6 +765,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
 }
 
 .pagination_link {
