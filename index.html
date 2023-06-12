@@ -81,7 +81,7 @@
                 Вход</button>
             </li>
             <li class="navigation_user_item">
-              <button class="navigation_user_button" type="button">
+              <button class="navigation_user_button navigation_cart_button" type="button">
                 <svg class="navigation_user_svg" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none"
                   viewBox="0 0 16 17">
                   <path fill="#2D3440" fill-rule="evenodd"
@@ -98,7 +98,8 @@
                   <ul class="cart_items_list">
                     <li class="cart_item">
                       <h3 class="cart_item_title">Малинка</h3>
-                      <!-- <img class="nujen li tut img?" src="" alt=""> -->
+                      <img class="cart_item_image" src="images/ice_cream_catalog/raspberry.png" width="46" height="46"
+                        alt="Малинка.">
                       <p class="cart_item_desc">1 кг х 310 ₽</p>
                       <span class="cart_item_price">310 ₽</span>
                       <button class="cart_item_button" type="button">
@@ -107,7 +108,8 @@
                     </li>
                     <li class="cart_item">
                       <h3 class="cart_item_title">Бабл-гам</h3>
-                      <!-- <img class="nujen li tut img?" src="" alt=""> -->
+                      <img class="cart_item_image" src="images/ice_cream_catalog/bubble_gum.png" width="46" height="46"
+                        alt="Бабл-гам.">
                       <p class="cart_item_desc">1,5 кг х 320 ₽</p>
                       <span class="cart_item_price">480 ₽</span>
                       <button class="cart_item_button" type="button">
@@ -115,6 +117,8 @@
                       </button>
                     </li>
                   </ul>
+                  <button class="popover_cart_button" type="button">Оформить заказ</button>
+                  <span class="popover_cart_sum_price">Итого: 790 ₽</span>
                 </div>
               </div>
             </li>
@@ -272,8 +276,8 @@
           <ul class="offer_list">
             <li class="offer_item">
               <h3 class="offer_container_title">Малинка даром!</h3>
-              <p class="offer_container_text">При покупке 2 кг любого фруктового мороженого добавим в ваш
-                заказ банку малинового варенья бесплатно.</p>
+              <p class="offer_container_text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку
+                малинового варенья бесплатно.</p>
               <a class="offer_container_link" href="#">Хочу подарок</a>
               <img class="offer_container_image" src="images/index/raspberry_waffle.png" width="219" height="268"
                 alt="Малинка.">
@@ -431,12 +435,12 @@
           <h2 class="visually_hidden">Адрес</h2>
           <address class="about_address">
             <p class="address_text">Адрес главного офиса<br>
-              и офлайн-магазина:<br>
+              и офлайн-магазина:
             </p>
-            <strong class="address_desc">наб. реки Карповки, 5 лит П, Санкт-Петербург</strong><br>
-            Для заказов по телефону:<br>
+            <p class="address_desc">наб. реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
+            <p class="address_tel_desc">Для заказов по телефону:</p>
             <a class="address_tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
-            (с 10 до 20 ежедневно)<br>
+            <span class="address_worktime">(с 10 до 20 ежедневно)</span>
             <button class="address_button" type="button">Форма обратной связи</button>
           </address>
         </section>
